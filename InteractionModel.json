@@ -1,0 +1,122 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": [
+          "stop",
+          "exit"
+        ]
+      },
+      {
+        "name": "DontStartExercise",
+        "samples": [
+          "Don't start the exercise",
+          "I don't want to exercise"
+        ],
+        "slots": []
+      },
+      {
+        "name": "ExerciseStart",
+        "samples": [
+          "Start exercise",
+          "Start the exercise",
+          "start"
+        ],
+        "slots": []
+      },
+      {
+        "name": "FeedbackIntent",
+        "samples": [
+          "I love it",
+          "I like it",
+          "I hate it",
+          "I don't like it",
+          "I like the exercise",
+          "I hate the exercise",
+          "I love the exercise",
+          "yes",
+          "no"
+        ],
+        "slots": []
+      },
+      {
+        "name": "GetIntroduction",
+        "samples": [
+          "Introduction",
+          "Give a Introduction",
+          "I would like an introduction",
+          "Yes I want a introduction",
+          "Yes please give me a introduction"
+        ],
+        "slots": []
+      },
+      {
+        "name": "GoBackToEssentials",
+        "samples": [
+          "Go back to essentials",
+          "Essentials please",
+          "I would like to hear essentials again"
+        ],
+        "slots": []
+      },
+      {
+        "name": "NoIntroduction",
+        "samples": [
+          "I don't want an introduction",
+          "Skip",
+          "No introduction"
+        ],
+        "slots": []
+      },
+      {
+        "name": "NotReadyIntent",
+        "samples": [
+          "Go back",
+          "Not ready",
+          "I am not ready"
+        ],
+        "slots": []
+      },
+      {
+        "name": "ReadyIntent",
+        "samples": [
+          "Yes I am ready",
+          "I am ready",
+          "Ready"
+        ],
+        "slots": []
+      },
+      {
+        "name": "TheyNotWeak",
+        "samples": [
+          "I am not weak",
+          "I am not fatigued",
+          "I have energy",
+          "energy",
+          "full of energy",
+          "vigour"
+        ],
+        "slots": []
+      },
+      {
+        "name": "TheyWeak",
+        "samples": [
+          "I feel weak",
+          "I feel fatigued",
+          "fatigued"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "seelenruhe"
+  }
+}
