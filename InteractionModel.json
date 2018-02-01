@@ -42,9 +42,7 @@
           "I don't like it",
           "I like the exercise",
           "I hate the exercise",
-          "I love the exercise",
-          "yes",
-          "no"
+          "I love the exercise"
         ],
         "slots": []
       },
@@ -100,10 +98,7 @@
         "samples": [
           "I am not weak",
           "I am not fatigued",
-          "I have energy",
-          "energy",
-          "full of energy",
-          "vigour"
+          "no"
         ],
         "slots": []
       },
@@ -112,7 +107,9 @@
         "samples": [
           "I feel weak",
           "I feel fatigued",
-          "fatigued"
+          "fatigued",
+          "yes",
+          "weak"
         ],
         "slots": []
       }
