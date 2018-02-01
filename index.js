@@ -31,7 +31,7 @@ const languageStrings = {
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit(':ask', 'Welcome to Seelenruhe, your personal assistant for rejuvenating Tai Chi and meditation exercises. Say Introduction if you would like to hear an introduction? or say Skip if you dont want to');
+        this.emit(':ask', 'Welcome to Seelenruhe, your personal assistant for rejuvenating Tai Chi exercises. Say Introduction if you would like to hear an introduction? or say Skip if you dont want to');
     },
     
     'GetIntroduction': function () {
@@ -68,7 +68,7 @@ const handlers = {
         // Create speech output
         //const speechOutput = this.t('INTRODUCTION_MESSAGE');
         //this.emit(':tell', speechOutput);
-        var audioFile = "Let's start our exercise, Keep your stance relaxed and follow the instructors directions. Best of luck and stay healthy <audio src='https://s3-eu-west-1.amazonaws.com/seelenruhestorage/Narration1.mp3' /> Do you like this exercise?";
+        var audioFile = "Let's start our exercise, Keep your stance relaxed and follow the instructors directions. <audio src='https://s3-eu-west-1.amazonaws.com/seelenruhestorage/Narration1.mp3' /> Do you like this exercise?";
         this.emit(':ask', audioFile,'try again');
     },
     
@@ -79,7 +79,7 @@ const handlers = {
         // Create speech output
         //const speechOutput = this.t('INTRODUCTION_MESSAGE');
         //this.emit(':tell', speechOutput);
-        var audioFile = "Let's start our exercise, Keep your stance relaxed and follow the instructors directions. Best of luck and stay healthy <audio src='https://s3-eu-west-1.amazonaws.com/seelenruhestorage/Narration2.mp3' /> Do you like this exercise?";
+        var audioFile = "Let's start our exercise, Keep your stance relaxed and follow the instructors directions. <audio src='https://s3-eu-west-1.amazonaws.com/seelenruhestorage/Narration2.mp3' /> Do you like this exercise?";
         this.emit(':ask', audioFile,'try again');
     },
     
@@ -91,7 +91,7 @@ const handlers = {
         //const speechOutput = this.t('INTRODUCTION_MESSAGE');
         //this.emit(':tell', speechOutput);
         //var audioFile = "<audio src='https://s3-eu-west-1.amazonaws.com/seelenruhestorage/Narration1.mp3' /> Do you like this exercise?";
-        this.emit(':tell','Thank you for your feedback. I will remember your preference for the next time');
+        this.emit(':tell','Thank you for your feedback. I will remember your preference for the next time <break time="0.3s" />Best of luck and stay healthy');
     },
     
     'NotReadyIntent': function () {
@@ -116,7 +116,7 @@ const handlers = {
     },
     
     'ExerciseStart': function () {
-        this.emit(':ask', 'Alright! Before you start your exercise let’s move into the right stance <break time="1s" /> Please stand up straight and follow my instructions <break time="0.3s" /> Lets start <break time="1s" /> Keep your head still and upright and Focus your eyes in the direction of your primary hand. <break time="1s" /> Close your mouth and with your tounge touch the roof of your mouth. <break time="1s" /> Make sure your body is centered and upright. <break time="1s" /> Arch your chest and slightly round your back without hunching it. <break time="1s" /> Loosen the tension around your waist and hips. <break time="1s" /> Relax and lower your shoulders and your elbows. <break time="1s" /> Extend your fingers but keep your wrists relaxed. <break time="0.3s" />Now we can continue to the workout. Say ready if you are ready to start the workout?');
+        this.emit(':ask', 'Alright! Before you start your exercise let’s move into the right stance <break time="1s" /> Please stand up straight and follow my instructions <break time="0.3s" /> Keep your head still and upright and Focus your eyes in the direction of your primary hand. <break time="0.3s" />Now we can continue to the workout. Say ready if you are ready to start the workout?');
     },
 
     'AMAZON.HelpIntent': function () {
